@@ -11,6 +11,11 @@
 |
 */
 
+Route::get('/auth', function()
+{
+	return View::make('auth.login');
+});
+
 Route::get('/', function()
 {
 	return View::make('hello');
