@@ -55,7 +55,8 @@
 <!-- /navbar -->
 <!-- Login wrapper -->
 <div class="login-wrapper">
-  <form action="{{ URL::to('/auth/login') }}" method="post" role="form" class="validate">
+  {{ Form::open(array('class' => 'validate','url'=>'auth/login')); }}
+  <!-- <form action="{{ URL::to('/auth/login') }}" method="post" role="form" class="validate"> -->
     <div class="popup-header"><a class="pull-left"><i class="icon-user-plus"></i></a><span class="text-semibold">User Login</span>
       <div class="btn-group pull-right"><a class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cogs"></i></a>
         <ul class="dropdown-menu icons-right dropdown-menu-right">
@@ -88,7 +89,8 @@
         </div>
       </div>
     </div>
-  </form>
+  <!-- </form> -->
+  {{ Form::close(); }}
 </div>
 <!-- /login wrapper -->
 <!-- Footer -->

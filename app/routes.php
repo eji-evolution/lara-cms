@@ -11,10 +11,7 @@
 |
 */
 
-Route::get('/auth', function()
-{
-	return View::make('auth.login');
-});
+Route::controller('/auth','AuthController');
 
 Route::get('/', function()
 {
